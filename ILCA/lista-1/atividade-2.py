@@ -1,4 +1,4 @@
-# encoding: iso-8859-1
+# encoding: iso-8859-1DD
 
 filme = input("Qual o seu filme favorito?")
 ano = input("Foi lançado em que ano?")
