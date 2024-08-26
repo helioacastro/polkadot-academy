@@ -8,4 +8,4 @@ for letra in frase:
     if letra.lower() in vogais:
         num_vogais = num_vogais + 1
 
-print("Total de vogais encontras é ", num_vogais)
+print("Total de vogais encontras é  ", num_vogais)
