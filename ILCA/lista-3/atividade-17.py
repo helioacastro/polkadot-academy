@@ -1,16 +1,16 @@
 # encoding: iso-8859-1
 
 # Lista com os 50 primeiros numeros primos
-# Desta forma o máximo número perfeito é o oitavo número: 2305843008139952128
+# Desta forma o maximo numero perfeito eh o oitavo numero (19 digitos): 2305843008139952128
 primos = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97 ]
 resultado = []
 soma = 0
 
 def gera_divisores(num):
-    # Faz a chamada da funç?o recursiva divisores()
-    # Após o processamento da variável resultado,
-    # é realizado o pós-processamento dos divisores repetidos, multiplicando-os
-    # além de adicionar o divisor 1 comum a todos os números
+    # Faz a chamada da funcao recursiva divisores()
+    # Apos o processamento da variavel resultado,
+    # eh realizado o pos-processamento dos divisores repetidos, multiplicando-os
+    # alem de adicionar o divisor 1 comum a todos os numeros
     
     divisores(num)
     resultado.append(1)
@@ -26,10 +26,10 @@ def divisores(num):
     if (num > 1):
 
         for primo in primos:
-            if (num % primo == 0):  #ð‰ divisð­vel pelo fator primo
+            if (num % primo == 0):  #E divisi­vel pelo fator primo
                 fator_primo = primo
 
-                if (num != fator_primo): #Noo busca novos divisores quanto o numero eh um numero primo
+                if (num != fator_primo): #Nao busca novos divisores quanto o numero eh um numero primo
                     # Divide o numero para encontrar o divisor
                     divisor = int(num/primo)
                     
